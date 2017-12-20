@@ -1,0 +1,50 @@
+body{
+    /*background-image: url("math_wallpaper.jpg");*/
+}
+
+.space{
+    padding: 5vh;
+}
+
+.display{
+    background-color: orange;
+    color: white;
+    height: 20vh;
+    text-align: right;
+}
+
+#calculations{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+#results{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 5px
+}
+
+.buttons{
+    /*border: 1px solid black;*/
+    height: 50vh;
+}
+
+.outerBox{
+    /*border: 5px solid black;*/
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: vh;
+    height: 80vh;
+    width: 60vw;
+}
+
+.btn{
+    height: 10vh;
+    width: 15vw;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    
+}
