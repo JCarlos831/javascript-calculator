@@ -8,60 +8,37 @@
     <title>Javascript Calculator</title>
 </head>
 <body>
-    <div class='space'>
-        
-    </div>
-    
-    <div class='row'>
-        <div class='outerBox'>
-            <div class='display'>
-                <div id='calculations'>...</div>
-                <div id='results'>...</div>
-            </div>
-                
-            <div class='buttons'>
-                <div class='row'>
-                    <div class='col-sm-12 btn-group text-center'>
-                        <button class='btn' id='buttonC' onclick='#'>C</button>
-                        <button class='btn' id='buttonCE' onclick='#'>CE</button>
-                        <button class='btn' id='button%' onclick='#'>%</button>
-                        <button class='btn' id='button/' onclick='#'>/</button>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12 btn-group text-center'>
-                        <button class='btn' id='button7' onclick='#'>7</button>
-                        <button class='btn' id='button8' onclick='#'>8</button>
-                        <button class='btn' id='button9' onclick='#'>9</button>
-                        <button class='btn' id='buttonX' onclick='#'>x</button>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12 btn-group text-center'>
-                        <button class='btn' id='button4' onclick='#'>4</button>
-                        <button class='btn' id='button5' onclick='#'>5</button>
-                        <button class='btn' id='button6' onclick='#'>6</button>
-                        <button class='btn' id='button-' onclick='#'>-</button>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12 btn-group text-center'>
-                        <button class='btn' id='button1' onclick='#'>1</button>
-                        <button class='btn' id='button2' onclick='#'>2</button>
-                        <button class='btn' id='button3' onclick='#'>3</button>
-                        <button class='btn' id='button+' onclick='#'>+</button>
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-sm-12 btn-group text-center'>
-                        <button class='btn' id='button+/-' onclick='#'>+/-</button>
-                        <button class='btn' id='button0' onclick='#'>0</button>
-                        <button class='btn' id='button.' onclick='#'>.</button>
-                        <button class='btn' id='button=' onclick='#'>=</button>
-                    </div>
-                </div>
-            </div>
-    </div>
+    <h1>Calculator</h1>
+   <div id='calc'>
+       <form>
+           <input type=text id='display'>
+           <br>
+           <input type='button' value='C' id='buttons' onclick='toDisplay("c")'>
+           <input type='button' value='CE' id='buttons' onclick='toDelete()'>
+           <input type='button' value='%' id='buttons' onclick='toDisplay("%")'>
+           <input type='button' value='/' id='buttons' onclick='toDisplay("/")'>
+           <br>
+           <input type='button' value='7' id='buttons' onclick='toDisplay("7")'>
+           <input type='button' value='8' id='buttons' onclick='toDisplay("8")'>
+           <input type='button' value='9' id='buttons' onclick='toDisplay("9")'>
+           <input type='button' value='*' id='buttons' onclick='toDisplay("*")'>
+           <br>
+           <input type='button' value='4' id='buttons' onclick='toDisplay("4")'>
+           <input type='button' value='5' id='buttons' onclick='toDisplay("5")'>
+           <input type='button' value='6' id='buttons' onclick='toDisplay("6")'>
+           <input type='button' value='-' id='buttons' onclick='toDisplay("-")'>
+           <br>
+           <input type='button' value='1' id='buttons' onclick='toDisplay("1")'>
+           <input type='button' value='2' id='buttons' onclick='toDisplay("2")'>
+           <input type='button' value='3' id='buttons' onclick='toDisplay("3")'>
+           <input type='button' value='+' id='buttons' onclick='toDisplay("+")'>
+           <br>
+           <input type='button' value=':)' id='buttons' onclick='toDisplay("")'>
+           <input type='button' value='0' id='buttons' onclick='toDisplay("0")'>
+           <input type='button' value='.' id='buttons' onclick='toDisplay(".")'>
+           <input type='button' value='=' id='equal' onclick='equal()'>
+       </form>
+   </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

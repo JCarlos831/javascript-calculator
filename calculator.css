@@ -6,45 +6,35 @@ body{
     padding: 5vh;
 }
 
-.display{
+h1{
+    text-align: center;
+}
+
+#calc{
+    text-align:center;
+}
+
+#display{
     background-color: orange;
     color: white;
     height: 20vh;
+    width: 48.5vw;
     text-align: right;
+    font-size: 4em;
 }
 
-#calculations{
-    color: white;
-    font-size: 1.5em;
-    padding-top: 5px;
-}
-
-#results{
-    color: white;
-    font-size: 1.5em;
-    padding-top: 5px
-}
-
-.buttons{
-    /*border: 1px solid black;*/
-    height: 50vh;
-}
-
-.outerBox{
-    /*border: 5px solid black;*/
-    z-index: 1;
-    margin-right: auto;
-    margin-left: auto;
-    padding: vh;
-    height: 80vh;
-    width: 60vw;
-}
-
-.btn{
+#buttons{
     height: 10vh;
-    width: 15vw;
+    width: 12vw;
     background-color: blue;
     color: white;
-    border: 2px solid white;
-    
+    border: 1px solid white;
+}
+
+#equal{
+    height: 10vh;
+    width: 12vw;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
 }
