@@ -1,6 +1,6 @@
-body{
-    /*background-image: url("math_wallpaper.jpg");*/
-}
+/*body{*/
+/*    background-image: url("math_wallpaper.jpg");*/
+/*}*/
 
 .space{
     padding: 5vh;
@@ -17,6 +17,15 @@ h1{
 #display{
     background-color: orange;
     color: white;
+    height: 10vh;
+    width: 48.5vw;
+    text-align: right;
+    font-size: 2em;
+}
+
+#result{
+    background-color: orange;
+    color: white;
     height: 20vh;
     width: 48.5vw;
     text-align: right;
@@ -28,13 +37,13 @@ h1{
     width: 12vw;
     background-color: blue;
     color: white;
-    border: 1px solid white;
+    font-size: 2em;
 }
 
 #equal{
     height: 10vh;
-    width: 12vw;
-    background-color: blue;
+    width: 24.26vw;
+    background-color: orange;
     color: white;
-    border: 1px solid white;
+    font-size: 2em;
 }
