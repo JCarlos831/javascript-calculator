@@ -9,39 +9,39 @@
     <title>Javascript Calculator</title>
 </head>
 <body>
-    <h1>Calculator</h1>
-   <div id='calc'>
-       <form name='calculator'>
-           <input type=text id='display' disabled>
-           <br>
-           <input type=text id='result' disabled>
-           <br>
-           <input type='button' value='C' id='buttons' onclick='calculator.display.value=""'>
-           <input type='button' value='CE' id='buttons' onclick='calculator.result.value=""'>
-           <input type='button' value='%' id='buttons' onclick='calculator.display.value += "%"'>
-           <input type='button' value='/' id='buttons' onclick='calculator.display.value += "/"'>
-           <br>
-           <input type='button' value='7' id='buttons' onclick='calculator.display.value += "7"'>
-           <input type='button' value='8' id='buttons' onclick='calculator.display.value += "8"'>
-           <input type='button' value='9' id='buttons' onclick='calculator.display.value += "9"'>
-           <input type='button' value='*' id='buttons' onclick='calculator.display.value += "*"'>
-           <br>
-           <input type='button' value='4' id='buttons' onclick='calculator.display.value += "4"'>
-           <input type='button' value='5' id='buttons' onclick='calculator.display.value += "5"'>
-           <input type='button' value='6' id='buttons' onclick='calculator.display.value += "6"'>
-           <input type='button' value='-' id='buttons' onclick='calculator.display.value += "-"'>
-           <br>
-           <input type='button' value='1' id='buttons' onclick='calculator.display.value += "1"'>
-           <input type='button' value='2' id='buttons' onclick='calculator.display.value += "2"'>
-           <input type='button' value='3' id='buttons' onclick='calculator.display.value += "3"'>
-           <input type='button' value='+' id='buttons' onclick='calculator.display.value += "+"'>
-           <br>
-           <!--<input type='button' value=':)' id='buttons' onclick='toDisplay("")'>-->
-           <input type='button' value='0' id='buttons' onclick='calculator.display.value += "0"'>
-           <input type='button' value='.' id='buttons' onclick='calculator.display.value+="."'>
-           <input type='button' value='=' id='equals' onclick='calculator.result.value=eval(calculator.display.value)'>
-       </form>
-   </div>
+    
+    <div id="calculator">
+        
+        <div id="total">
+        
+        </div>
+        <div id="operators">
+		        
+		        <a>+</a>
+		        <a>-</a>
+		        <a>/</a>
+		        <a>*</a>
+		        <a id="equals">=</a>
+        
+        </div>
+        <div id="numbers">
+            	
+            	<a>1</a>
+		        <a>2</a>
+		        <a>3</a>
+		        <a>4</a>
+		        <a>5</a>
+		        <a>6</a>
+		        <a>7</a>
+		        <a>8</a>
+		        <a>9</a>
+		        <a id="clear">C</a>
+		        <a>0</a>
+		        <a id="clearAll">AC</a>
+    
+        </div>
+    
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
