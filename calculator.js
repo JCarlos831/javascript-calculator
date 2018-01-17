@@ -15,16 +15,33 @@ $(document).ready(function(){
     var operator = "";
     var totaldiv = $("#total");
     totaldiv.text("0");
-    $("#numbers > a").not("#clear,#clearall").click(function(){
-		number += $(this).text();
-		totaldiv.text(number);
-		testNumLength(number);
+    
+    $("#numbers a").not("#clear, #clearAll").click(function(){
+        number += $(this).html();
+        totaldiv.text(number);
+        testNumLength(number);
     });
-    $("#operators > a").not("#equals").click(function(){
-		operator = $(this).text();
-		newnumber = number;
-		number = "";
-		totaldiv.text("0");
+    
+    $("#operators a").not("#equals").click(function(){
+        operator = $("#button").text();
+        newnumber = number;
+        number = "";
+        totaldiv.text("0");
     });
-    //Add another .click() here!
+
+    $("#clear, #clearAll").click(function(){
+       number = "";
+       totaldiv.text("0");
+       if(document.getElementById() === "clearAll") {
+           newnumber = "";
+       }
+    });
+
+    $("#equals a").click(function(){
+        if(operator === "+") {
+            parseInt(newnumber, 10);
+            parseInt(number, 10);
+            
+        }
+    });
 });
