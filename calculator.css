@@ -1,16 +1,17 @@
 #calculator{
-    width: 70vw;
-    height: 90vh;
+    width: 35vw;
     margin: auto;
+    margin-top: 5vh;
     background-color: #000;
     /*border: 5px solid #008248;*/
     border-radius: 10px;
+    padding-top: 1vh;
 }
 
 #total {
     background-color: #FFF;
     height: 20vh;
-    width: 68vw;
+    width: 34vw;
     font-size: 4em;
     text-align: right;
     margin: auto;
@@ -26,13 +27,13 @@ a {
 }
 
 #operators a {
-    /*width: 15vw;*/
+    width: 15vw;
     /*height: 14vh;*/
-    margin: auto;
+    /*margin: auto;*/
     text-align: center;
     color: #008248;
-    font-size: 39px;
-    border-radius: 10px;
+    font-size: 43px;
+    /*border-radius: 10px;*/
     text-decoration: none;
     background-color: #FFF;
 }
@@ -44,7 +45,7 @@ a {
     /*width: 15vw;*/
     /*height: 14vh;*/
     /*margin: auto;*/
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     text-decoration: none;
     background-color: #008248;
 }

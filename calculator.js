@@ -37,5 +37,7 @@ $(document).ready(function(){
     		number = (parseInt(newNumber, 10) * parseInt(number,10)).toString(10);
     	}
     	totaldiv.text(number);
+    	
+    	number = "";
     });
 });
