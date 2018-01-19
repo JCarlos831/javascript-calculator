@@ -38,6 +38,7 @@ $(document).ready(function(){
     	}
     	totaldiv.text(number);
     	
-    	number = "";
+    // 	number = "";
+    // 	newNumber = "";
     });
 });

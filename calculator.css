@@ -11,7 +11,7 @@
 #total {
     background-color: #FFF;
     height: 20vh;
-    width: 34vw;
+    width: 32vw;
     font-size: 4em;
     text-align: right;
     margin: auto;
@@ -27,25 +27,29 @@ a {
 }
 
 #operators a {
-    width: 15vw;
+    display: inline-block;
+    width: 5vw;
     /*height: 14vh;*/
-    /*margin: auto;*/
+    margin-left: 1.5vw;
+    /*margin-right: 1vw;*/
     text-align: center;
     color: #008248;
     font-size: 43px;
     /*border-radius: 10px;*/
     text-decoration: none;
     background-color: #FFF;
+    /*padding: 5px;*/
 }
 
 #numbers a {
+    display: inline-block;
     text-align: center;
     color: #FFF;
     font-size: 43px;
-    /*width: 15vw;*/
+    width: 5vw;
     /*height: 14vh;*/
-    /*margin: auto;*/
     /*border-radius: 10px;*/
     text-decoration: none;
     background-color: #008248;
+    margin: 1vw 3vw;
 }
