@@ -10,37 +10,48 @@
 </head>
 <body>
     
-    <div id="calculator">
+    <div class="container" id="calculator">
         
-        <div id="total">
-        
-        </div>
-        <div id="operators">
-		        
-		        <a>+</a>
-		        <a>-</a>
-		        <a>/</a>
-		        <a>*</a>
-		        <a id="equals">=</a>
+        <div class="container" id="display">
+            <div class="row">
+                <div id="total">
+                    
+                </div>
+            </div>
         
         </div>
-        <div id="numbers">
-            	
-            	<a>1</a>
-		        <a>2</a>
-		        <a>3</a>
-		        <a>4</a>
-		        <a>5</a>
-		        <a>6</a>
-		        <a>7</a>
-		        <a>8</a>
-		        <a>9</a>
-		        <a id="clear">C</a>
-		        <a>0</a>
-		        <a id="clearAll">AC</a>
-    
-        </div>
-    
+        
+        <div class="container">
+                <div>
+                    <button class="allClearBtn" id="btnAllClear">AC</button>
+                    <button class="clearBtn" id="btnClear">C</button>
+                    <button class="opBtn" id="btnModulous">%</button>
+                    <button class="opBtn" id="btnDivide">/</button>
+                </div>
+                <div>
+                    <button class="numBtn" id="btn7" value=7>7</button>
+                    <button class="numBtn" id="btn8" value=8>8</button>
+                    <button class="numBtn" id="btn9" value=9>9</button>
+                    <button class="opBtn" id="btnMult" value=*>X</button>
+                </div>
+                <div>
+                    <button class="numBtn" id="btn4" value=4>4</button>
+                    <button class="numBtn" id="btn5" value=5>5</button>
+                    <button class="numBtn" id="btn6" value=6>6</button>
+                    <button class="opBtn" id="btnSubt">-</button>
+                </div>
+                <div>
+                    <button class="numBtn">1</button>
+                    <button class="numBtn">2</button>
+                    <button class="numBtn">3</button>
+                    <button class="opBtn">+</button>
+                </div>
+                <div>
+                    <button class="numBtn">0</button>
+                    <button class="numBtn">.</button>
+                    <button class="equalsBtn">=</button>
+                </div>
+            </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
