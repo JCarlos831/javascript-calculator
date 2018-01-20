@@ -1,4 +1,6 @@
 #calculator {
+    background-color: grey;
+    padding: 1vw;
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
@@ -12,11 +14,16 @@
 }
 
 #bigBtn {
-    width: 23vw;
+    width: 21vw;
     margin: 4px;
 }
 
 #btn {
-    width: 11.5vw;
+    width: 10.5vw;
     margin: 1px;
+}
+
+.btns {
+    width: 46vw;
+    margin: auto;
 }
