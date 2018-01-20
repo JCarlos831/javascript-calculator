@@ -10,49 +10,35 @@
 </head>
 <body>
     
-    <div class="container" id="calculator">
-        
-        <div class="container" id="display">
-            <div class="row">
-                <div id="total">
-                    
-                </div>
-            </div>
-        
+    <div class="container">
+            <!-- show numbers and calculation -->
+            <div class="show-calc" id="sc">0</div>
+            
+            <!-- numbers div -->
+            <div class="box box-num">0</div>
+            <div class="box box-num">1</div>
+            <div class="box box-num">2</div>
+            <div class="box box-num">3</div>
+            <div class="box box-num">4</div>
+            <div class="box box-num">5</div>
+            <div class="box box-num">6</div>
+            <div class="box box-num">7</div>
+            <div class="box box-num">8</div>
+            <div class="box box-num">9</div>
+            <div class="box box-num">.</div>
+            
+            <!-- operator div -->
+            <div class="box box-opr">+</div>
+            <div class="box box-opr">-</div>
+            <div class="box box-opr">X</div>
+            <div class="box box-opr">/</div>
+            <div class="box box-opr">=</div>
+            
+            <!-- reset and clear -->
+            <div class="box box-reset" id="reset">reset</div>
+            <div class="box box-clear" id="clear">clear</div>
+            
         </div>
-        
-        <div class="container">
-                <div>
-                    <button class="allClearBtn" id="btnAllClear">AC</button>
-                    <button class="clearBtn" id="btnClear">C</button>
-                    <button class="opBtn" id="btnModulous">%</button>
-                    <button class="opBtn" id="btnDivide">/</button>
-                </div>
-                <div>
-                    <button class="numBtn" id="btn7" value=7>7</button>
-                    <button class="numBtn" id="btn8" value=8>8</button>
-                    <button class="numBtn" id="btn9" value=9>9</button>
-                    <button class="opBtn" id="btnMult" value=*>X</button>
-                </div>
-                <div>
-                    <button class="numBtn" id="btn4" value=4>4</button>
-                    <button class="numBtn" id="btn5" value=5>5</button>
-                    <button class="numBtn" id="btn6" value=6>6</button>
-                    <button class="opBtn" id="btnSubt">-</button>
-                </div>
-                <div>
-                    <button class="numBtn">1</button>
-                    <button class="numBtn">2</button>
-                    <button class="numBtn">3</button>
-                    <button class="opBtn">+</button>
-                </div>
-                <div>
-                    <button class="numBtn">0</button>
-                    <button class="numBtn">.</button>
-                    <button class="equalsBtn">=</button>
-                </div>
-            </div>
-    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
