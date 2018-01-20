@@ -9,37 +9,43 @@
     <title>Javascript Calculator</title>
 </head>
 <body>
+    <h1 class="text-center">Javascript Calculator</h1>
     
-    <div class="container">
-            <!-- show numbers and calculation -->
-            <div class="show-calc" id="sc">0</div>
-            
-            <!-- numbers div -->
-            <div class="box box-num">0</div>
-            <div class="box box-num">1</div>
-            <div class="box box-num">2</div>
-            <div class="box box-num">3</div>
-            <div class="box box-num">4</div>
-            <div class="box box-num">5</div>
-            <div class="box box-num">6</div>
-            <div class="box box-num">7</div>
-            <div class="box box-num">8</div>
-            <div class="box box-num">9</div>
-            <div class="box box-num">.</div>
-            
-            <!-- operator div -->
-            <div class="box box-opr">+</div>
-            <div class="box box-opr">-</div>
-            <div class="box box-opr">X</div>
-            <div class="box box-opr">/</div>
-            <div class="box box-opr">=</div>
-            
-            <!-- reset and clear -->
-            <div class="box box-reset" id="reset">reset</div>
-            <div class="box box-clear" id="clear">clear</div>
-            
+    <div id="calculator">
+        <div class="form-group">
+            <input type="text" class="form-control form-control-lg" id="display" disabled>
         </div>
-    
+        <div class="btns">
+            <div>
+                <input type="button" value="CE" class="btn btn-danger btn-lg" id="bigBtn" onclick='clearDisplay()'>
+                <input type="button" value="C" class="btn btn-warning btn-lg" id="btn" onclick='clear()'>
+                <input type="button" value="&#247;" class="btn btn-info btn-lg" id="btn" onclick='divide()'>
+            </div>
+            <div>
+                <input type="button" value="7" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("7")'>
+                <input type="button" value="8" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("8")'>
+                <input type="button" value="9" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("9")'>
+                <input type="button" value="X" class="btn btn-info btn-lg" id="btn" onclick='multiply()'>
+            </div>
+            <div>
+                <input type="button" value="4" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("4")'>
+                <input type="button" value="5" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("5")'>
+                <input type="button" value="6" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("6")'>
+                <input type="button" value="-" class="btn btn-info btn-lg" id="btn" onclick='subtract()'>
+            </div>
+            <div>
+                <input type="button" value="1" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("1")'>
+                <input type="button" value="2" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("2")'>
+                <input type="button" value="3" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("3")'>
+                <input type="button" value="+" class="btn btn-info btn-lg" id="btn" onclick='add()'>
+            </div>
+            <div>
+                <input type="button" value="0" class="btn btn-primary btn-lg" id="bigBtn" onclick='toDisplay("0")'>
+                <input type="button" value="=" class="btn btn-success btn-lg" id="bigBtn" onclick='toDisplay()'>
+            </div>
+        </div>
+    </div>
+            
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='calculator.js'></script>
