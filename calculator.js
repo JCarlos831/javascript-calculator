@@ -1,4 +1,8 @@
 var display = document.getElementById("display");
+var operator = "";
+var num1 = "";
+var num2 = "";
+var number = "";
 
 function toDisplay (x) {
     display.value += x;
@@ -10,9 +14,12 @@ function clearDisplay() {
 
 function deleteOne() {
     var num1 = display.value;
-    var len = num1.length-1;
-    console.log(len);
-    var num2 = num1.substring(0, len);
+    var length = num1.length-1;
+    var num2 = num1.substring(0, length);
     display.value = num2;
+}
+
+function equals (){
+  display.value = eval(display.value);
 }
 
