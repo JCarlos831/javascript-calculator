@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
-    <link href="calculator.css" rel="stylesheet">
-    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>JS Calculator</title>
 </head>
 <body>
-    <h1 class="text-center">Javascript Calculator</h1>
-    
-    <div id="calculator">
-        <div class="form-group">
-            <input type="text" class="form-control form-control-lg" id="display" disabled>
-        </div>
-        <div class="btns">
-            <div>
-                <input type="button" value="CE" class="btn btn-danger btn-lg" id="bigBtn" onclick='clearDisplay()'>
-                <input type="button" value="C" class="btn btn-warning btn-lg" id="btn" onclick='deleteOne()'>
-                <input type="button" value="&#247;" class="btn btn-info btn-lg" id="btn" onclick='toDisplay("/")'>
+    <div class="container">
+        <div class="main">
+            <div class="title">
+                <h1 class="center-align">Javascript Calculator</h1>
+                <hr>
             </div>
-            <div>
-                <input type="button" value="7" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("7")'>
-                <input type="button" value="8" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("8")'>
-                <input type="button" value="9" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("9")'>
-                <input type="button" value="&#215;" class="btn btn-info btn-lg" id="btn" onclick='toDisplay("*")'>
-            </div>
-            <div>
-                <input type="button" value="4" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("4")'>
-                <input type="button" value="5" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("5")'>
-                <input type="button" value="6" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("6")'>
-                <input type="button" value="-" class="btn btn-info btn-lg" id="btn" onclick='toDisplay("-")'>
-            </div>
-            <div>
-                <input type="button" value="1" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("1")'>
-                <input type="button" value="2" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("2")'>
-                <input type="button" value="3" class="btn btn-primary btn-lg" id="btn" onclick='toDisplay("3")'>
-                <input type="button" value="+" class="btn btn-info btn-lg" id="btn" onclick='toDisplay("+")'>
-            </div>
-            <div>
-                <input type="button" value="0" class="btn btn-primary btn-lg" id="bigBtn" onclick='toDisplay("0")'>
-                <input type="button" value="=" class="btn btn-success btn-lg" id="bigBtn" onclick='equals()'>
+            <div class="center-align">
+                <div id="calculator">
+                    <div id="calculator-display">
+                        <h3><input id="calculator-input" class="right-align" type="text" value="0"/></h3>
+                    </div>
+                    <div id="calculator-buttons">
+                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="AC" onclick="kick('ac')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="C" onclick="kick('c')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="%" onclick="kick('%')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="/" onclick="kick('/')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="7" onclick="kick('7')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="8" onclick="kick('8')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="9" onclick="kick('9')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="*" onclick="kick('*')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="4" onclick="kick('4')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="5" onclick="kick('5')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="6" onclick="kick('6')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="-" onclick="kick('-')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="1" onclick="kick('1')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="2" onclick="kick('2')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="3" onclick="kick('3')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="+" onclick="kick('+')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light white"><i class="material-icons"><input type="button" value=""></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="0" onclick="kick('0')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light white"><i class="material-icons"><input type="button" value=""/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons"><input type="button" value="=" onclick="kick('=')"/></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-            
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src='calculator.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
