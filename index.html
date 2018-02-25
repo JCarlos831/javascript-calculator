@@ -17,29 +17,29 @@
             <div class="center-align">
                 <div id="calculator">
                     <div id="calculator-display">
-                        <h3><input id="calculator-input" class="right-align" type="text" value="0"/></h3>
+                        <h3><input id="calculator-input" class="right-align" type="text" value="0" disabled/></h3>
                     </div>
                     <div id="calculator-buttons">
-                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="AC" onclick="kick('ac')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="C" onclick="kick('c')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="%" onclick="kick('%')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="/" onclick="kick('/')"/></i></a><br>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="7" onclick="kick('7')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="8" onclick="kick('8')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="9" onclick="kick('9')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="*" onclick="kick('*')"/></i></a><br>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="4" onclick="kick('4')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="5" onclick="kick('5')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="6" onclick="kick('6')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="-" onclick="kick('-')"/></i></a><br>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="1" onclick="kick('1')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="2" onclick="kick('2')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="3" onclick="kick('3')"/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="+" onclick="kick('+')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="AC" onclick="toDisplay('ac')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light orange"><i class="material-icons"><input type="button" value="C" onclick="toDisplay('c')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="%" onclick="toDisplay('%')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="/" onclick="toDisplay('/')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="7" onclick="toDisplay('7')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="8" onclick="toDisplay('8')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="9" onclick="toDisplay('9')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="*" onclick="toDisplay('*')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="4" onclick="toDisplay('4')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="5" onclick="toDisplay('5')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="6" onclick="toDisplay('6')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="-" onclick="toDisplay('-')"/></i></a><br>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="1" onclick="toDisplay('1')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="2" onclick="toDisplay('2')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="3" onclick="toDisplay('3')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="button" value="+" onclick="toDisplay('+')"/></i></a><br>
                         <a class="btn-floating btn-large waves-effect waves-light white"><i class="material-icons"><input type="button" value=""></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="0" onclick="kick('0')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="button" value="0" onclick="toDisplay('0')"/></i></a>
                         <a class="btn-floating btn-large waves-effect waves-light white"><i class="material-icons"><input type="button" value=""/></i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons"><input type="button" value="=" onclick="kick('=')"/></i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons"><input type="button" value="=" onclick="toDisplay('=')"/></i></a>
                     </div>
                 </div>
             </div>
