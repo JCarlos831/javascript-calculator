@@ -1,16 +1,16 @@
   const display = document.querySelector("#calculator-input");
   let isClear = false;
-  var tempString = "";
-  var calculatorType = "";
-  var isContinue = true;
+  let tempString = "";
+  let operatorType = "";
+  let isContinue = true;
   
   function toDisplay(clickValue) {
     switch (clickValue) {
       case "=":
-        if (tempString != "" && calculatorType != "") {
-          display.value = calculations(tempString, display.value, calculatorType);
+        if (tempString != "" && operatorType != "") {
+          display.value = calculations(tempString, display.value, operatorType);
           isContinue = false;
-          calculatorType = "";
+          operatorType = "";
         }
         break;
       case "+":
@@ -19,34 +19,38 @@
       case "/":
       case "%":
         // If the stored operator is not empty   Represents continuous operation 
-        if (calculatorType != "" && !isContinue) { // Perform calculations first 
-          tempString = calculations(tempString, display.value, calculatorType);
+        if (operatorType != "" && !isContinue) { // Perform calculations first 
+          tempString = calculations(tempString, display.value, operatorType);
           isClear = true;
-          calculatorType = clickValue;
+          operatorType = clickValue;
         } else {
           tempString = display.value; // After clicking the operator   Pre stored character 
           isClear = true;// Represents the click operator 
-          calculatorType = clickValue;// Stored operator 
+          operatorType = clickValue;// Stored operator 
         }
         isContinue = true;
         break;
-      case "ac":
-        display.value = "0";
+      case "ac"://Clears the Display
+        display.value = "";
         isClear = false;
         tempString = "";
-        calculatorType = "";
+        operatorType = "";
         break;
-      case "c":
-        var num1 = display.value;
-        var length = num1.length-1
-        var num2 = num1.substring(0, length);
+      case "c"://Deletes last number clicked
+        let num1 = display.value;
+        let length = num1.length-1
+        let num2 = num1.substring(0, length);
         display.value = num2;
         isClear = false;
         tempString = "";
-        calculatorType = "";
+        operatorType = "";
         break;
-      default:// The regular numeric button hits 
-        display.value = display.value == "0" ? "" : display.value;
+      default://Number clicked displays 
+        if(display.value === "0"){
+            "";
+        } else {
+            display.value;
+        }
         isContinue = false;
         if (isClear) {
           display.value = "";
