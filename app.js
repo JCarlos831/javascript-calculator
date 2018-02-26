@@ -1,6 +1,6 @@
-  var display = document.querySelector("#calculator-input");
-  var isClear = false;
-  var tempStringing = "";
+  const display = document.querySelector("#calculator-input");
+  let isClear = false;
+  var tempString = "";
   var calculatorType = "";
   var isContinue = true;
   
